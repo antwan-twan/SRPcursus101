@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <main>
-        <h1>Hello World!</h1>
-        <p>Dit is een test</p>
-        <p>Dit is test nummer 2</p>
+        <div id="myDIV" class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul id="myUL">
+        </ul>
+        <script src="js/script.js"></script>
     </main>
-    
 </body>
 </html>
