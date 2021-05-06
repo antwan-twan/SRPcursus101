@@ -23,3 +23,12 @@ function newElement() {
 // Functie toevoegen en linken aan knop
 const itemToevoegen = document.querySelector("span");
 itemToevoegen.addEventListener("click", newElement);
+
+var inputField = document.querySelector("input"); // pak input element
+inputField.addEventListener("keypress", checkEnter) // luister naar alle toets drukken wanneer gebruiker typt in input 
+
+function checkEnter(event) {
+  if (event.key === "Enter") { // check of de ingedrukte toets de enter toets is.
+    newElement() // vuur newElement function af
+  }
+}
