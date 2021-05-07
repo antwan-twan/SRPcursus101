@@ -8,16 +8,17 @@
         url('fonts/IM_FELL_DW_Pica_Roman.svg#IM_FELL_DW_Pica_Roman') format('svg');
     font-weight: normal;
     font-style: 'Roman';
-    
+
 }
 
-body{
-    background:rgba(136, 136, 136, 0.432);
-    font-family: 'IM FELL DW Pica';
+body {
+    background: rgba(136, 136, 136, 0.432);
+    font-family: 'IM FELL DW Pica', 'Times New Roman', Times, serif;
     width: 100%;
     margin: 0;
     padding: 0;
 }
+
 /* Remove margins and padding from the list */
 ul {
     margin: 0;
@@ -26,7 +27,8 @@ ul {
     background-image: url('../img/paper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    }
+
+}
 
 /* Styling geven aan de verschillende items */
 ul li {
@@ -36,8 +38,11 @@ ul li {
     /* background: #eee; */
     font-size: 18px;
     transition: 0.2s;
+    border-bottom-style: solid;
+    border-color: lightskyblue;
+    border-width: 2px;
     /* background-image: url('../img/paper.jpg'); */
-   
+
     /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -120,15 +125,15 @@ span:hover {
     background-color: #bbb;
 }
 
-#footer{
+#footer {
     display: flex;
-	justify-content: space-evenly;
-	background-color: #232B47;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0;
-	padding: 10px;
+    justify-content: space-evenly;
+    background-color: #232B47;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 10px;
 }
