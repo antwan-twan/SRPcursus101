@@ -7,6 +7,7 @@ list.addEventListener('click', function(ev) {
 });
 
 // Maakt een nieuw item aan wanneer je op de "toevoegen aan lijst"-knop drukt
+var bodyElement = document.querySelector("body")
 function newElement() {
   var taak = document.createElement("li");
   var inputValue = document.querySelector("input").value;
@@ -18,6 +19,7 @@ function newElement() {
     document.querySelector("ul").appendChild(taak);
   }
   document.querySelector("input").value = "";
+  bodyElement.classList.remove("zerostate");
 }
 
 // Functie toevoegen en linken aan knop

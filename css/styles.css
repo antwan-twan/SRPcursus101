@@ -1,22 +1,48 @@
-/* Include the padding and border in an element's total width and height */
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family: 'IM FELL DW Pica';
+    src: url('../fonts/IM_FELL_DW_Pica_Roman.eot');
+    src: url('../fonts/IM_FELL_DW_Pica_Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/IM_FELL_DW_Pica_Roman.woff2') format('woff2'),
+        url('../fonts/IM_FELL_DW_Pica_Roman.woff') format('woff'),
+        url('../fonts/IM_FELL_DW_Pica_Roman.ttf') format('truetype'),
+        url('../fonts/IM_FELL_DW_Pica_Roman.svg#IM_FELL_DW_Pica_Roman') format('svg');
+    font-weight: normal;
+    font-style: 'Roman';
+
+}
+
+body {
+    background: rgba(136, 136, 136, 0.432);
+    font-family: 'IM FELL DW Pica', 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Remove margins and padding from the list */
 ul {
     margin: 0;
     padding: 0;
+    width: 100%;
+    background-image: url('../img/paper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 112px;
+    margin-top: 142.88px;
 }
 
-/* Style the list items */
+/* Styling geven aan de verschillende items */
 ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    /* background: #eee; */
     font-size: 18px;
     transition: 0.2s;
+    border-bottom-style: solid;
+    border-color: lightskyblue;
+    border-width: 2px;
+    /* background-image: url('../img/paper.jpg'); */
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -25,24 +51,15 @@ ul li {
     user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-    background: #f9f9f9;
-}
-
-/* Darker background-color on hover */
-ul li:hover {
-    background: #ddd;
-}
-
-/* When clicked on, add a background color and strike out text */
+/* Afvinken */
 ul li.checked {
-    background: #888;
+    background-image: url('../img/paper.jpg');
+    background: rgba(136, 136, 136, 0.432);
     color: #fff;
     text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/* Voeg een vinkje toe */
 ul li.checked::before {
     content: '';
     position: absolute;
@@ -56,20 +73,19 @@ ul li.checked::before {
     width: 7px;
 }
 
-/* Style the header */
 div {
-    background-color: #f44336;
+    background-color: #f4c136;
     padding: 30px 40px;
     color: white;
     text-align: center;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #232b47;
+    z-index: 2;
+
 }
 
-/* Clear floats after the header */
-div:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 /* Style the input */
 input {
@@ -78,8 +94,8 @@ input {
     border-radius: 0;
     width: 75%;
     padding: 10px;
-    float: left;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: 'IM FELL DW Pica';
 }
 
 /* Style the "Add" button */
@@ -90,7 +106,7 @@ span {
     color: #555;
     float: left;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
@@ -100,15 +116,34 @@ span:hover {
     background-color: #bbb;
 }
 
-#footer{
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#footer {
     display: flex;
-	justify-content: space-evenly;
-	background-color: #232B47;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0;
-	padding: 10px;
+    justify-content: space-evenly;
+    background-color: #232B47;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.zerostate{
+    background: rgba(136, 136, 136, 0.432);
+    background-image: url(../img/leegv2.png);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    position: fixed;
+    right: 500px;
+    
 }
