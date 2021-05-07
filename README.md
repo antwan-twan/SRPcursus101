@@ -2,6 +2,7 @@
 SRP Cursus CMD Leerjaar 1 Meivakantie Frontend-development
 <p>De To Do app</p>
 
+---
 
 ## **UI Principles**
 ### **04. Keep Users in control**
@@ -18,6 +19,8 @@ SRP Cursus CMD Leerjaar 1 Meivakantie Frontend-development
 <p>De gebruiker kan door middel van te swipen en te scrollen makkelijk het scherm kan bedienen wanneer er meer dan 9 taken staan (op formaat van iPhone 6/7/8) of meer dan 16 op een laptop of groter scherm.</P>
 <p>Dit swipen en scrollen doet denken aan het omslaan van een pagina of papiertje. </p>
 
+---
+
 ### **08. Provide a natural next step**
 ![image](https://user-images.githubusercontent.com/83555667/117435099-c0533600-af2d-11eb-8b7d-54b37b754e8d.png)
 <p>De gebruiker ziet snel waar hij/zij naar toe moet om een taak toe te voegen aan je To Do List. In de balk waar je een taak kan toevoegen staat een grote hint om dat hier te doen. </p>
@@ -27,6 +30,8 @@ SRP Cursus CMD Leerjaar 1 Meivakantie Frontend-development
 
 ![image](https://user-images.githubusercontent.com/83555667/117435690-6a32c280-af2e-11eb-96f8-e311df55c09a.png)
 <p>Om een taak af te vinken is de enige mogelijkheid voor een gebruiker om op de taak te tikken. Hoewel swipen ook had gekund, is dit een logischere oplossing als je kijkt naar andere apps die dezelfde functionaliteiten bieden. </p>
+
+---
 
 ### **16. A crucial moment: the zero state**
 ![image](https://user-images.githubusercontent.com/83555667/117439991-cea45080-af33-11eb-90b2-71d3a0378824.png)
