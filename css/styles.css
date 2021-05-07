@@ -27,7 +27,8 @@ ul {
     background-image: url('../img/paper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
+    margin-bottom: 112px;
+    margin-top: 142.88px;
 }
 
 /* Styling geven aan de verschillende items */
@@ -48,11 +49,6 @@ ul li {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-/* Gebruik een donkere achtergrond wanneer de cursor boven een item staat */
-ul li:hover {
-    background: #ddd;
 }
 
 /* Afvinken */
@@ -82,13 +78,14 @@ div {
     padding: 30px 40px;
     color: white;
     text-align: center;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #232b47;
+    z-index: 2;
+
 }
 
-div:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 /* Style the input */
 input {
@@ -119,6 +116,13 @@ span:hover {
     background-color: #bbb;
 }
 
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 #footer {
     display: flex;
     justify-content: space-evenly;
@@ -129,5 +133,5 @@ span:hover {
     right: 0px;
     margin-bottom: 0px;
     margin-top: 0;
-    padding: 10px;
+    padding: 20px;
 }
