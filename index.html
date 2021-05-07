@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="icon" href="img/heavy-check-mark_2714.png" type="image/png">
     <title>To Do</title>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="clear">
-                <button class="refresh"></button>
-                <div id="date"></div>
-            </div>
-        </div>
-        <div class="content">
-            <ul id="list">
-                <li class="item">
-                    <i class="circle"></i>
-                    <p>Doe iets nuttigs</p>                   
-                </li>
-
-            </ul>
-            <div class="additem">
-                <i class="pluscircle"></i>
-                <input type="text" id="input" placeholder="Voeg een taak toe">
-            </div>
-        </div>
+<body class="zerostate">
+    <div id="header">
+        <h1>My To Do List</h1>
+        
     </div>
+    <ul>
+    </ul>
+
+        <div id="footer">
+        <input type="text" placeholder="Voeg een taak toe...">
+        <span>Toevoegen aan lijst</span>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
