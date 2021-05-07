@@ -135,3 +135,15 @@ span:hover {
     margin-top: 0;
     padding: 20px;
 }
+
+.zerostate{
+    background: rgba(136, 136, 136, 0.432);
+    background-image: url(../img/leegv2.png);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    position: fixed;
+    right: 500px;
+    
+}
